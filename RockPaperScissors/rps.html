@@ -1,0 +1,49 @@
+ 			<!--  Web Programming 
+ 					Author Romeo Al Bishara
+ 			-->
+	<!DOCTYPE html>
+
+	<html lang="en">
+	<head>
+		<title>RPS Game</title>
+		<link rel="stylesheet"  href="_css/style.css">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Artifika' >
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/script.js"></script> 
+		
+	</head>
+	<body>
+<!-- html code for the game -->
+	
+		<div class="playing">	
+			<div>
+				<p> You: </p>
+				<img class="img" src="_img/rock.png" alt="rock" width="200" Height="170">
+				
+			</div>
+				<div class="results"> 0 : 0 </div>
+			<div>
+				<p> The computer: </p>
+				<!-- flip the image for the computer -->
+				<img class="img" src="_img/rock.png" alt="rock" width="200" Height="175" style="transform: scaleX(-1);"> 
+				
+			</div>
+		</div>
+		<div class="button">
+				<button onClick="hand(1)" class="click"> Rock </button>
+				<button onClick="hand(2)" class="click"> Paper </button>
+				<button onClick="hand(3)" class="click"> Scissors </button>
+		
+		</div>
+		
+
+		<h1 id="results">The Result:</h1>
+
+		<div class="winner"> </div>
+		<div class="button"> <button onClick="reset()" class="click" id="reset"> Reset </button>
+		</div>
+
+
+	</body>
+	</html>
+	<!-- end of html -->

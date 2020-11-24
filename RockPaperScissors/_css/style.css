@@ -1,0 +1,105 @@
+  
+    body {
+    background-color: #564D4D;
+    font-family     : Artifika;
+    color           : white;
+    font-size       : 30px;
+    margin-top        : 25px;
+    }
+/* Control the main div for the images */
+    .playing {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    padding         : 0 150px 0 150px;
+   
+    }
+    
+
+.button {
+    display         : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding         : 10px 150px 0 150px;
+
+
+}
+    .click {
+    width: 250px;
+    margin          : 20px;
+    border-radius   : 35px;
+    background-color: #960019;
+    color           : white;
+    font-size       : 25px;
+    cursor          : pointer;
+    padding         : 10px;
+    
+   
+    }
+   
+    .click:focus {
+      outline: none;
+
+    }
+    
+    .click:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+   .imgAfter {
+    animation-name: shake;
+    position: relative;
+  animation-duration: 0.7s;
+  animation-iteration-count: 3;
+ 
+}
+
+@keyframes shake {
+  0%   {top:0;}
+ 50%  {top:20px;}
+ 100%  {top:0;}
+ 
+}
+
+    #results{
+    color           : #630313;
+    text-align      : center;
+    font-size       : 24px;
+
+    }
+
+/* display the results inside the winner div */
+    .winner {
+    
+    margin: 5px auto;
+    text-align: center;
+    width           : 350px;
+    font-size       : 40px;
+    border          : 8px solid ;
+    border-style    : inset;
+    border-color    : #7C6464;
+    background-color: #A5756F;
+    padding         : 15px;
+    height: 50px;
+    }
+
+.results {
+   align-self: flex-start;
+   text-align: center;
+   width: 120px;
+    font-size       : 25px;
+    border          : 8px solid ;
+    border-style    : inset;
+    border-color    : #7C6464;
+    background-color: #A5756F;
+    padding         : 10px;
+    }
+    
+#reset {
+   background-color: #4B67AF;
+   width: 130px;
+   margin: 0 auto;
+   font-size: 16px;
+   padding:10px;
+}
